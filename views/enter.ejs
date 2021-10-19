@@ -1,0 +1,577 @@
+
+<html lang="en">
+
+	<!-- Mirrored from dreamguys.co.in/demo/doccure/admin/doctor-list by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Nov 2019 04:12:51 GMT -->
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<title>Entertainment</title>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+		<!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+		<!-- Feathericon CSS -->
+		<link rel="stylesheet" href="/css/feathericon.min.css">
+
+		<!-- Datatables CSS -->
+		<link rel="stylesheet" href="/plugins/datatables/datatables.min.css">
+
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="/css/style.css">
+
+
+		<!--[if lt IE 9]>
+				<script src="js/html5shiv.min.js"></script>
+				<script src="js/respond.min.js"></script>
+			<![endif]-->
+	</head>
+
+	<body>
+
+		<!-- Main Wrapper -->
+		<div class="main-wrapper">
+
+			<!-- Header -->
+			<div class="header">
+
+				<!-- Logo -->
+				<div class="header-left">
+					<a href="index" class="logo">
+						<img src="/img/logo.png" alt="Logo">
+					</a>
+					<a href="index" class="logo logo-small">
+						<img src="/img/logo-small.png" alt="Logo" width="30" height="30">
+					</a>
+				</div>
+				<!-- /Logo -->
+
+				<a href="javascript:void(0);" id="toggle_btn">
+					<i class="fe fe-text-align-left"></i>
+				</a>
+
+
+				<!-- Mobile Menu Toggle -->
+				<a class="mobile_btn" id="mobile_btn">
+					<i class="fa fa-bars"></i>
+				</a>
+				<!-- /Mobile Menu Toggle -->
+
+				<!-- Header Right Menu -->
+				<ul class="nav user-menu">
+
+
+					<!-- User Menu -->
+					<li class="nav-item dropdown has-arrow">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							Admin
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="/admin/logout">Logout</a>
+						</div>
+					</li>
+					<!-- /User Menu -->
+
+				</ul>
+				<!-- /Header Right Menu -->
+
+			</div>
+			<!-- /Header -->
+
+			<!-- Sidebar -->
+			<div class="sidebar" id="sidebar">
+				<div class="sidebar-inner slimscroll">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<ul>
+							<li class="menu-title">
+								<span>Home</span>
+							</li>
+							<li>
+								<a href="/latestupdates"><i class="fe fe-list-bullet"></i> <span>Latest Updates</span></a>
+							</li>
+							<li class=''>
+								<a href="/features"><i class="fe fe-list-bullet"></i> <span>Sports and features</span></a>
+							</li>
+							<li>
+								<a href="/about"><i class="fe fe-list-bullet"></i> <span>About us</span></a>
+							</li>
+							<li >
+								<a href="/blogs"><i class="fe fe-list-bullet"></i> <span>Blogs</span></a>
+							</li>
+							<li class='active'>
+								<a href="/enter"><i class="fe fe-list-bullet"></i> <span>Entertainment</span></a>
+							</li>
+							<li>
+								<a href="/wait"><i class="fe fe-list-bullet"></i> <span>Waitlist</span></a>
+							</li>
+							<li >
+								<a href="/staytune"><i class="fe fe-list-bullet"></i> <span>Staytune</span></a>
+							</li>
+							<li >
+								<a href="/ads"><i class="fe fe-list-bullet"></i> <span>Advertisement</span></a>
+							</li>
+							<li >
+								<a href="/video"><i class="fe fe-list-bullet"></i> <span>Video</span></a>
+							</li>
+							<li >
+								<a href="/shopby"><i class="fe fe-list-bullet"></i> <span>Shop By</span></a>
+							</li>
+
+
+					</div>
+				</div>
+			</div>
+			<!-- /Sidebar -->
+
+			<!-- Page Wrapper -->
+			<div class="page-wrapper">
+				<div class="content container-fluid">
+
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-12 col-md-12 col-lg-12 d-flex">
+								<h3 class="page-title">Entertainment</h3>
+
+							</div><div class="col-12 col-md-12 col-lg-12 d-flex">
+								<a href="#Add_Doctor" data-toggle="modal"
+									class="btn btn-primary float-right mt-2">Add</a>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- /Page Header -->
+
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="card">
+								<div class="card-body">
+									<div class='row'>
+										<div class="col-lg-4 col-md-4">
+											<div class="card flex-fill">
+												<img alt="Card Image" src="data:image/jpeg;base64,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" class="card-img-top">
+												<div class="card-header">
+													<h5 class="card-title mb-0">Mika Singh</h5>
+												</div>
+												<div class="card-body">
+													<p class="card-text">
+														<strong>Type : </strong>  Singers
+														&emsp;&emsp;&emsp;
+														<strong>Age : </strong>  34
+													</p>
+													
+													<!-- <div style='color: blue'><strong>OneDay</strong></div>
+													<strong>Run : </strong>120
+													&emsp;&emsp;&emsp;
+													<strong>Run rate : </strong> 4.2
+													<br>
+													<strong>Wicket : </strong> 19
+													&emsp;&emsp;&emsp;
+													<strong>Catch : </strong> 23
+													<br><br>
+													<div style='color: rgb(236, 14, 32)'><strong>Test Match</strong></div>
+													<strong>Run : </strong>120
+													&emsp;&emsp;&emsp;
+													<strong>Run rate : </strong> 4.2
+													<br>
+													<strong>Wicket : </strong> 19
+													&emsp;&emsp;&emsp;
+													<strong>Catch : </strong> 23
+													<br><br> -->
+													<div class="actions">
+						
+														<a data-toggle="modal" href="#edit1"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> Edit
+														</a>
+														<a class="btn btn-sm bg-danger-light"  href="/admin/testimonials/delete/">
+															<i class="fe fe-trash"></i> Delete
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-4">
+											<div class="card flex-fill">
+												<img alt="Card Image" src="" class="card-img-top">
+												<div class="card-header">
+													<h5 class="card-title mb-0">hh</h5>
+												</div>
+												<div class="card-body">
+													<p class="card-text">ggg</p>
+													<div class="actions">
+						
+														<a data-toggle="modal" href="#edit_testimonials"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> Edit
+														</a>
+														<a class="btn btn-sm bg-danger-light"  href="/admin/testimonials/delete/">
+															<i class="fe fe-trash"></i> Delete
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-4 col-md-4">
+											<div class="card flex-fill">
+												<img alt="Card Image" src="" class="card-img-top">
+												<div class="card-header">
+													<h5 class="card-title mb-0">hh</h5>
+												</div>
+												<div class="card-body">
+													<p class="card-text">ggg</p>
+													<div class="actions">
+						
+														<a data-toggle="modal" href="#edit1"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> Edit
+														</a>
+														<a class="btn btn-sm bg-danger-light"  href="/admin/testimonials/delete/">
+															<i class="fe fe-trash"></i> Delete
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- /Page Wrapper -->
+
+	<!-- Add Modal -->
+
+	<div class="modal fade" id="Add_Doctor" aria-hidden="true" role="dialog">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Add Person</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="/admin/doctors/add" method="POST"  enctype='multipart/form-data'>
+						<div class="row form-row">
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Name</label>
+									<input name="name" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Age</label>
+									<input name="Name" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Type</label>
+									<input name="Name" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Player Image</label>
+									<input name="image" type="file" class="form-control">
+									<input name="fallbackurl" hidden type="text" class="form-control"
+													value="">
+								</div>
+							</div>
+							
+							<!-- <div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Player Image</label>
+									<input name="image" type="file" class="form-control">
+									<input name="fallbackurl" hidden type="text" class="form-control"
+													value="">
+								</div>
+							</div>
+							<div class="col-12">
+								<center><strong>Stats </strong></center>
+							</div>
+							<div class="col-12">
+								<strong>OneDay </strong>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Run</label>
+									<input name="Name" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Run rate</label>
+									<input name="Name" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Wicket</label>
+									<input name="Name" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Catch</label>
+									<input name="Name" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12">
+								<strong>Test Match </strong>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Run</label>
+									<input name="Name" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Run rate</label>
+									<input name="Name" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Wicket</label>
+									<input name="Name" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label>Catch</label>
+									<input name="Name" type="text" class="form-control">
+								</div>
+							</div> -->
+
+						</div>
+						<button type="submit" class="btn btn-primary btn-block">Add Person</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /ADD Modal -->
+
+
+			<!-- Edit Details Modal -->
+
+			<!-- for loop start here -->
+
+			<div class="modal fade" id="edit1" aria-hidden="true" role="dialog">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Edit Person</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form action="/admin/doctors/add" method="POST"  enctype='multipart/form-data'>
+								<div class="row form-row">
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Name</label>
+											<input name="name" type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Age</label>
+											<input name="Name" type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Type</label>
+											<input name="Name" type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Player Image</label>
+											<input name="image" type="file" class="form-control">
+											<input name="fallbackurl" hidden type="text" class="form-control"
+															value="">
+										</div>
+									</div>
+									<!-- <div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Country Flag</label>
+											<input name="image" type="file" class="form-control">
+											<input name="fallbackurl" hidden type="text" class="form-control"
+															value="">
+										</div>
+									</div>
+									
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Player Image</label>
+											<input name="image" type="file" class="form-control">
+											<input name="fallbackurl" hidden type="text" class="form-control"
+															value="">
+										</div>
+									</div>
+									<div class="col-12">
+										<center><strong>Stats </strong></center>
+									</div>
+									<div class="col-12">
+										<strong>OneDay </strong>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Run</label>
+											<input name="Name" type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Run rate</label>
+											<input name="Name" type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Wicket</label>
+											<input name="Name" type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Catch</label>
+											<input name="Name" type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-12">
+										<strong>Test Match </strong>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Run</label>
+											<input name="Name" type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Run rate</label>
+											<input name="Name" type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Wicket</label>
+											<input name="Name" type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Catch</label>
+											<input name="Name" type="text" class="form-control">
+										</div>
+									</div> -->
+		
+								</div>
+								<button type="submit" class="btn btn-primary btn-block">Save Changes</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- copy -->
+
+			<div class="modal fade" id="edit_doctor2" aria-hidden="true" role="dialog">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Edit Stats</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+
+							<form action="/admin/doctors/edit/" method="POST" enctype='multipart/form-data'>
+								<div class="row form-row">
+
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>Stats</label>
+											<input name="name" type="text" class="form-control" value="">
+										</div>
+									</div>
+
+								</div>
+								<button type="submit" class="btn btn-primary btn-block">Save Changes</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- for loop ends here -->
+
+			<!-- /Edit Details Modal -->
+
+			<!-- Delete Modal -->
+			<div class="modal fade" id="delete_modal" aria-hidden="true" role="dialog">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="form-content p-2">
+								<h4 class="modal-title">Delete</h4>
+								<p class="mb-4">Are you sure want to delete?</p>
+								<form action="/admin/doctor/delete/" method="POST">
+									<button type="button" class="btn btn-primary">Save </button>
+								</form>
+
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Delete Modal -->
+
+		</div>
+		<!-- /Main Wrapper -->
+
+		<!-- jQuery -->
+		<script src="/js/jquery-3.2.1.min.js"></script>
+
+		<!-- Bootstrap Core JS -->
+		<script src="/js/popper.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+
+		<!-- Slimscroll JS -->
+		<script src="/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+		<!-- Datatables JS -->
+		<script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+		<script src="/plugins/datatables/datatables.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="/js/script.js"></script>
+		<script src="/js/edit.js"></script>
+
+	</body>
+
+	<!-- Mirrored from dreamguys.co.in/demo/doccure/admin/doctor-list by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Nov 2019 04:12:51 GMT -->
+
+	</html>
